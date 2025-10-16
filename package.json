@@ -1,0 +1,29 @@
+{
+  "name": "insight-scraper-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon --watch src --ext js,mjs,cjs,json --signal SIGTERM src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "overrides": {
+    "undici": "^5.28.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
